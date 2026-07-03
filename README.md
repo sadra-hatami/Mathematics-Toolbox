@@ -20,8 +20,7 @@ Mathematics Toolbox - v1.7.22
 
 ➗✖️➖➕
 
-سایت: https://sadra1732.github.io/Mathematics_Toolbox
-
+سایت: https://github.com/sadra-hatami/Mathematics_Toolbox
 ایمیل ارتباط و پشتیبانی: mathematics.toolbox.sadra@gmail.com
 
 ایمیل سازنده برنامه: sadra.hatami.1732@gmail.com
