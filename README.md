@@ -117,7 +117,7 @@ https://abzarek.ir/service-p/msg/4994415
 
 ### Official Channels
 
-Telegram • Rubika • Eitaa • Bale • Soroush Plus
+Telegram • Rubika • Eitaa • Baleh • Soroush+
 
 **@Mathematics_Toolbox**
 
