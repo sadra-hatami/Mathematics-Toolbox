@@ -1,10 +1,10 @@
 <div align="center">
 
-# Mathematics Toolbox
+# ➗ Mathematics Toolbox
 
-### A Comprehensive Persian Mathematics Toolkit
+### A Comprehensive Persian Mathematics Toolkit & Middle School Learning Platform
 
-A powerful educational toolkit featuring 32+ mathematical utilities and comprehensive middle school mathematics resources for Persian-speaking students.
+A powerful educational project that combines **32+ specialized mathematical tools** with **comprehensive middle school mathematics education**, helping students both **solve mathematical problems** and **learn mathematics effectively** in one integrated platform.
 
 <br>
 
@@ -30,34 +30,52 @@ A powerful educational toolkit featuring 32+ mathematical utilities and comprehe
 
 # 📖 About
 
-**Mathematics Toolbox** is a Persian educational mathematics project designed to combine practical mathematical tools with structured learning resources in a single application.
+**Mathematics Toolbox** is a comprehensive Persian educational project that brings together **advanced mathematical problem-solving tools** and **complete middle school mathematics education** in a single platform.
 
-The project aims to simplify mathematical problem-solving while helping students strengthen their understanding of middle school mathematics through educational content and practice questions.
+Unlike traditional calculator applications that only provide mathematical utilities, Mathematics Toolbox also serves as a structured learning resource. Students can both **solve mathematical problems using specialized tools** and **learn mathematics through organized educational content, lessons, explanations, and exam-oriented practice questions**.
 
-It is suitable for both gifted students (SAMPAD) and students studying in public or private schools.
+The project is designed to support students throughout their middle school mathematics journey while making mathematical concepts easier to understand and apply.
+
+It is suitable for both **SAMPAD (Gifted)** students and students studying in public or private schools.
 
 ---
 
 # ✨ Features
+
+## 🧮 Mathematical Problem Solving
 
 * ➗ More than **32 specialized mathematical tools**
 * 📐 Algebra utilities
 * 📏 Geometry calculations
 * 🔢 Number theory tools
 * 📊 Statistics and probability
-* 🧮 Mathematical problem solving
-* 📚 Comprehensive middle school mathematics lessons
-* 📝 Practice and exam-oriented questions
-* 🎯 Educational content for different learning levels
+* 🧮 Equation solving and mathematical calculations
 * ⚡ Fast and user-friendly interface
+
+## 📚 Mathematics Education
+
+* 📖 Comprehensive middle school mathematics lessons
+* 📝 Exam-oriented practice questions
+* 🎯 Structured educational content
+* 📘 Step-by-step learning materials
+* 🏫 Suitable for both gifted and regular students
+* 💡 Designed to strengthen mathematical understanding rather than only providing answers
 
 ---
 
 # 🎯 Project Goals
 
-The purpose of Mathematics Toolbox is to provide an all-in-one educational platform where students can both learn mathematics and solve mathematical problems without relying on multiple separate applications.
+Mathematics Toolbox was created with two primary goals:
 
-The project focuses on usability, educational value, and accessibility for Persian-speaking learners.
+### 1️⃣ Mathematical Problem Solving
+
+To provide a comprehensive collection of specialized mathematical tools that help students solve mathematical problems quickly, accurately, and efficiently.
+
+### 2️⃣ Mathematics Education
+
+To provide a complete educational platform for middle school mathematics, enabling students to learn concepts, review lessons, practice with exam-style questions, and improve their mathematical skills.
+
+Instead of using multiple separate applications for learning and calculations, students can access everything they need in one place.
 
 ---
 
@@ -131,7 +149,7 @@ The source code, educational materials, website design, and project structure ar
 
 Contributions, suggestions, bug reports, and feature requests are welcome.
 
-If you have ideas to improve the project, feel free to open an Issue or submit a Pull Request.
+Feel free to open an Issue or submit a Pull Request.
 
 ---
 
@@ -145,6 +163,6 @@ Your support encourages future improvements and helps more students benefit from
 
 <div align="center">
 
-## ❤️ Designed & Developed by Sadra Hatami
+## ❤️ Designed & Developed by **Sadra Hatami**
 
 </div>
