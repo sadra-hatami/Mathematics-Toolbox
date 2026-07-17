@@ -45,7 +45,7 @@ It is suitable for both **SAMPAD (Gifted)** students and students studying in pu
 
 ## 🧮 Mathematical Problem Solving
 
-* ➗ More than **32 specialized mathematical tools**
+* 🧮 More than **32 specialized mathematical tools**
 * 📐 Algebra utilities
 * 📏 Geometry calculations
 * 🔢 Number theory tools
