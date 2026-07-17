@@ -39,7 +39,6 @@ An all-in-one desktop application that combines **32+ specialized mathematical t
 - Educational Platform
 - Mathematical Tools
 - Technologies
-- Installation
 - Usage
 - Target Audience
 - Future Roadmap
