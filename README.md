@@ -182,34 +182,6 @@ Mathematics Toolbox has been developed using modern technologies focused on desk
 
 ---
 
-# 📦 Installation
-
-## Requirements
-
-- Python 3.x
-- PyQt5
-
-## Clone Repository
-
-```bash
-git clone https://github.com/sadra-hatami/Mathematics-Toolbox.git
-cd Mathematics-Toolbox
-```
-
-## Install Dependencies
-
-```bash
-pip install PyQt5
-```
-
-## Run Application
-
-```bash
-python main.py
-```
-
----
-
 # ▶️ Usage
 
 After launching the application, users can access all available mathematical tools directly from the main interface.
