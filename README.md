@@ -22,7 +22,7 @@ A powerful educational project that combines **32+ specialized mathematical tool
 
 <br>
 
-[🌐 Website](https://sadra-hatami.github.io/Mathematics-Toolbox/)  •  
+[🌐 Website](https://sadra-hatami.github.io/Mathematics-Toolbox/)
 [📧 Support](mailto:mathematics.toolbox.sadra@gmail.com)
 
 </div>
