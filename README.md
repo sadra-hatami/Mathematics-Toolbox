@@ -320,17 +320,16 @@ Every contribution helps make this project better for students and educators.
 
 # 📬 Contact
 
-### Support
-📧 mathematics.toolbox.sadra@gmail.com
-
-
-### Developer
+### Developer:
 ### **Sadra Hatami**
 
 📧 [Email](mailto:sadra.hatami.1732@gmail.com)
 
-
 🌐 [GitHub](https://github.com/sadra-hatami)
+
+
+### Support
+📧 mathematics.toolbox.sadra@gmail.com
 
 
 ### Anonymous Messages
