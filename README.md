@@ -326,7 +326,11 @@ Every contribution helps make this project better for students and educators.
 
 ### Developer
 ### **Sadra Hatami**
-📧 sadra.hatami.1732@gmail.com
+
+📧 [Email](mailto:sadra.hatami.1732@gmail.com)
+
+
+🌐 [GitHub](https://github.com/sadra-hatami)
 
 
 ### Anonymous Messages
