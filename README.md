@@ -22,6 +22,19 @@ An all-in-one desktop application that combines **32+ specialized mathematical t
 ![Persian](https://img.shields.io/badge/Language-Persian-success?style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/Open_Source-Project-black?style=for-the-badge&logo=github)
 
+
+- [About the Project](#-about-the-project)
+- [Key Features](#-key-features)
+- [Mathematical Tools](#-mathematical-tools)
+- [Tech Stack](#-tech-stack)
+- [Getting Started & Installation](#-getting-started--installation)
+- [Project Architecture](#-project-architecture)
+- [Target Audience](#-target-audience)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [Developer & Contact](#-developer--contact)
+- [License](#-license)
+
 <br>
 
 [🌐 Website](https://sadra-hatami.github.io/Mathematics-Toolbox/)
