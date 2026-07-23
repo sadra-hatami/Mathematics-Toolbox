@@ -323,7 +323,7 @@ Every contribution helps make this project better for students and educators.
 
 # 📬 Contact
 
-### Developer:
+Developer:
 ## **Sadra Hatami**
 
 📧 [Email](mailto:sadra.hatami.1732@gmail.com)
