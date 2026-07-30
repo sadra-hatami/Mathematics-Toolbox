@@ -5,7 +5,7 @@
 
 ### A Comprehensive Persian Mathematics Learning & Problem-Solving Platform
 
-An all-in-one desktop application that combines **32+ specialized mathematical tools** with **complete middle school mathematics education**, interactive learning resources, and exam-oriented practice in a single modern application.
+An all-in-one desktop application that combines **40+ specialized mathematical tools** with **complete middle school mathematics education**, interactive learning resources, and exam-oriented practice in a single modern application.
 
 <br>
 
