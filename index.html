@@ -26,6 +26,8 @@
     <meta name="twitter:image" content="https://s8.uupload.ir/files/photo_2026-02-21_20-36-28_0y50.jpg?v=2">
 
     <title>جعبه ابزار ریاضیات | Mathematics Toolbox</title>
+
+    <link rel="manifest" href="manifest.json">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -3768,6 +3770,20 @@ var _baseInit = init;
           });
         };
         window.onload = init;
+</script>
+
+ <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('./sw.js')
+        .then(function(registration) {
+          console.log('Service Worker با موفقیت ثبت شد:', registration.scope);
+        })
+        .catch(function(error) {
+          console.log('خطا در ثبت Service Worker:', error);
+        });
+    });
+  }
 </script>
 
 </body>
