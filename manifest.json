@@ -1,0 +1,24 @@
+{
+  "name": "جعبه ابزار ریاضیات",
+  "short_name": "Math Toolbox",
+  "description": "قدرتمندترین جعبه ابزار ریاضی فارسی با بیش از ۴۰ ابزار تخصصی",
+  "start_url": "https://sadra-hatami.github.io/Mathematics-Toolbox/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://s8.uupload.ir/files/photo_2026-02-21_20-36-28_0y50.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "https://s8.uupload.ir/files/photo_2026-02-21_20-36-28_0y50.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
