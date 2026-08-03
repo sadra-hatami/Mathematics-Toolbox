@@ -17,6 +17,9 @@ An all-in-one application that combines **40+ specialized mathematical tools** w
 
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![GUI Framework](https://img.shields.io/badge/GUI-PyQt5-41CD52?style=for-the-badge&logo=qt&logoColor=white)](https://pypi.org/project/PyQt5/)
+[![SymPy](https://img.shields.io/badge/Math-SymPy-3B5526?style=for-the-badge)](https://www.sympy.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)](https://matplotlib.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 ![Desktop](https://img.shields.io/badge/Desktop-Application-0078D6?style=for-the-badge)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-0078D6?style=for-the-badge)](https://github.com/sadra-hatami/Mathematics-Toolbox)
@@ -224,13 +227,23 @@ The **web companion** is available at:
 
 ✅ **40 integrated mathematical tools** (equations, matrices, plotting, geometry, number theory, …)
 
-✅ Designed specifically for Persian-speaking students
+✅ **Symbolic math** with SymPy — equation solving, factorization, polynomial division, matrix inverse & determinant with step-by-step output
+
+✅ **Function plotting** with Matplotlib — graph functions and save charts as images
+
+✅ **Full number analysis** — primes, divisors, GCD/LCM, Euler’s totient, base conversion in one place
+
+✅ **Geometry suite** — Heron, Pythagoras, polygons, area/volume, congruence & similarity, angles, symmetry
+
+✅ Designed specifically for Persian-speaking students (RTL UI, B Titr / Vazir fonts)
 
 ✅ **Fully offline** — no internet required for core tools
 
 ✅ Three dedicated versions: Desktop / Laptop, Surface, Android
 
-✅ User-friendly interface (PyQt5)
+✅ Built-in **feedback / survey** on each tool for continuous improvement
+
+✅ Educational section for **grades 7–9** (SAMPAD and regular schools)
 
 ✅ Fast and lightweight performance
 
@@ -246,29 +259,33 @@ The **web companion** is available at:
 |------------|---------|
 | Python | Main programming language |
 | PyQt5 | Graphical User Interface (GUI) |
-| SymPy | Symbolic math (equations, matrices, algebra) |
-| Matplotlib / NumPy | Function plotting and numerical support |
+| SymPy | Symbolic math (equations, matrices, algebra, factorization) |
+| NumPy | Numerical computing |
+| Matplotlib | Function plotting and chart export |
 | HTML / CSS / JavaScript | Web companion & documentation |
 
 ---
 
 # ▶️ Usage
 
-### Desktop application
+### Download the application
 
-1. Download the latest build from [Releases](https://github.com/sadra-hatami/Mathematics-Toolbox/releases) (or run the Python source).
-2. Launch the application (Windows / Linux / macOS).
-3. Select a tool from the main grid (40 tools).
-4. Enter inputs → compute → review results and explanations.
-5. Use the **Educational section** for lessons and practice.
+Go to the **Download** section on the official website and choose one of the three dedicated versions:
 
-> First launch may take a moment. For best results on Windows, you may run as Administrator if needed.
+- **Desktop / Laptop**
+- **Surface**
+- **Android**
 
-### Website
+**Website:** https://sadra-hatami.github.io/Mathematics-Toolbox/
 
-Open:
+### After installation
 
-**https://sadra-hatami.github.io/Mathematics-Toolbox/**
+1. Launch the application.
+2. Select a tool from the main grid (40 tools).
+3. Enter inputs → compute → review results and explanations.
+4. Use the **Educational section** for lessons and practice.
+
+> The application is **fully offline**. First launch may take a moment. For best results on Windows, you may run as Administrator if needed.
 
 ---
 
