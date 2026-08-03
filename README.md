@@ -43,8 +43,8 @@ An all-in-one application that combines **40+ specialized mathematical tools** w
 - [About](#-about)
 - [Why Mathematics Toolbox?](#-why-mathematics-toolbox)
 - [Key Features](#-key-features)
+- [The 40 Tools](#-the-40-tools)
 - [Educational Platform](#-educational-platform)
-- [Mathematical Tools](#-mathematical-problem-solving-tools)
 - [Dedicated Versions](#-dedicated-versions)
 - [Technologies](#️-technologies)
 - [Usage](#️-usage)
@@ -62,7 +62,7 @@ An all-in-one application that combines **40+ specialized mathematical tools** w
 
 **Mathematics Toolbox** is a comprehensive Persian educational platform developed to simplify both **learning mathematics** and **solving mathematical problems**.
 
-Unlike traditional calculators or single-purpose applications, Mathematics Toolbox combines dozens of mathematical utilities with structured educational content, allowing students to study, practice, and solve problems within one unified environment — **fully offline**, with no account or server required for core use.
+Unlike traditional calculators or single-purpose applications, Mathematics Toolbox combines **40 specialized mathematical utilities** with structured educational content, allowing students to study, practice, and solve problems within one unified environment — **fully offline**, with no account or server required for core use.
 
 The project has been designed primarily for Persian-speaking learners and provides an intuitive interface suitable for classroom education, self-study, and exam preparation.
 
@@ -91,41 +91,92 @@ The project focuses on:
 
 # ✨ Key Features
 
-## 🧮 Mathematical Problem-Solving Tools
+- **40 specialized tools** across number theory, algebra, geometry, sequences, matrices, vectors, and more
+- **Equation solvers** — general equations, quadratic equations, and linear systems
+- **Matrix operations** — add, subtract, multiply, determinant, inverse, transpose (with steps)
+- **Function plotting** — graph mathematical functions and export images
+- **Full number analysis** — primes, divisors, GCD/LCM, Euler’s totient, base conversion
+- **Geometry toolkit** — Heron, Pythagoras, polygons, areas/volumes, congruence & similarity, inscribed/central angles, symmetry
+- **Algebra tools** — factorization, polynomial division, fraction calculator
+- **Educational section** — middle-school lessons and exam-style practice (grades 7–9)
+- **Fully offline** desktop & web experience
+- **Three dedicated builds:** Desktop / Laptop · Surface · Android
 
-Mathematics Toolbox includes more than **40 specialized mathematical utilities**, enabling users to solve a wide range of mathematical problems quickly and accurately.
+---
 
-The application covers multiple branches of mathematics, including algebra, geometry, number theory, statistics, probability, sequences, fractions, and numerical analysis.
+# 🧮 The 40 Tools
 
-### Main Categories
+All tools available in the main application menu:
 
-| Category | Description |
-|----------|-------------|
-| 🔢 Number Theory | Prime numbers, divisors, GCD, LCM, Euler's Totient, factorization and more |
-| 📐 Geometry | Polygon calculations, areas, perimeters, volumes, Pythagorean theorem, coordinate geometry |
-| ➗ Algebra | Equations, systems, mathematical expressions, fraction calculations |
-| 📊 Statistics & Probability | Statistical calculations and probability utilities |
-| 🌀 Sequences | Fibonacci sequence, prime sequence and mathematical patterns |
-| 🧠 Mathematical Utilities | Unit converter, calculators and helper tools |
+### Number theory & arithmetic
 
-### Spotlight on the 40+ tools
+| # | Tool |
+|---|------|
+| 1 | Full number analysis |
+| 2 | Sieve of Eratosthenes (prime sieve) |
+| 3 | Greatest Common Divisor (GCD) |
+| 4 | Least Common Multiple (LCM) |
+| 5 | Egyptian fraction conversion |
+| 6 | Base conversion (binary / octal / decimal / hex) |
+| 7 | Euler’s totient function (φ) |
+| 8 | Divisors of a number |
+| 9 | Prime divisors |
+| 10 | Primality test |
+| 11 | n-th prime number |
+| 12 | Order of a prime in the prime sequence |
+| 13 | Advanced calculator |
+| 14 | Fraction calculator |
 
-The toolbox is organized so students can move from **calculation** to **understanding** without leaving the app. Representative capabilities include:
+### Sequences
 
-| Area | What you can do |
-|------|------------------|
-| **Equations & algebra** | Linear and quadratic solvers, 2×2 systems, free-form equations, expression simplify / factor / expand, algebraic arithmetic |
-| **Number theory** | Primality tests, prime factorization, divisor lists & counts, GCD / LCM, Euler’s totient, modular arithmetic |
-| **Geometry & measurement** | Heron’s formula, Pythagoras, polygon angles, triangle congruence & similarity, 2D/3D area & volume (square, rectangle, triangle, rhombus, parallelogram, trapezoid, circle, ellipse, cube, box, sphere, cylinder, cone, pyramid, prism, regular octahedron) |
-| **Sequences & patterns** | Fibonacci, prime sequences, arithmetic sequences, Pascal / Khayyam triangle |
-| **Fractions & ratios** | Egyptian fractions, percentages, ratio helpers |
-| **Vectors & analytic geometry** | 2D vector sum, magnitude, dot product, angle, point distance, slope |
-| **Matrices & numerics** | Matrix operations, roots, powers, scientific calculator |
-| **Units & conversion** | Length, mass, volume, temperature with step-by-step conversion |
-| **Learning layer** | Formula library, definitions, mathematicians’ history, grade 7–9 educational packs |
-| **Practice & engagement** | Algebra challenges, math mini-games, geometry quizzes, divisor snake game, XP progression (web) |
+| # | Tool |
+|---|------|
+| 15 | n-th Pythagorean number |
+| 16 | Order in the Pythagorean sequence |
+| 17 | n-th Fibonacci number |
+| 18 | Order in the Fibonacci sequence |
 
-Together these form a **40+ tool** surface aimed at middle-school through early high-school problem solving — available **fully offline** on Desktop / Laptop, Surface, and Android builds.
+### Geometry
+
+| # | Tool |
+|---|------|
+| 19 | Pythagorean theorem |
+| 20 | Draw regular n-gon |
+| 21 | Draw custom polygon |
+| 22 | Area, volume & perimeter of shapes |
+| 23 | Heron’s formula |
+| 24 | Congruence & similarity of shapes (coordinates) |
+| 25 | Triangle congruence & similarity (sides & angles) |
+| 26 | Inscribed, central & tangent angles |
+| 27 | Reflection symmetry (line & point) |
+| 28 | Analytic geometry |
+
+### Vectors
+
+| # | Tool |
+|---|------|
+| 29 | Vector resultant |
+| 30 | Vector decomposition |
+| 31 | Angle between vectors |
+
+### Algebra & equations
+
+| # | Tool |
+|---|------|
+| 32 | Algebraic expression factorization |
+| 33 | Polynomial division |
+| 34 | General equation solver |
+| 35 | Quadratic equation solver |
+| 36 | Linear system of equations solver |
+
+### Matrices, plotting & statistics
+
+| # | Tool |
+|---|------|
+| 37 | Matrix operations (add / subtract / multiply / det / inverse / transpose) |
+| 38 | Function graph plotting |
+| 39 | Statistics & probability |
+| 40 | Educational section (middle-school lessons & exam practice) |
 
 ---
 
@@ -145,6 +196,7 @@ The application includes:
 - 📚 Educational explanations
 - 💡 Practical mathematical examples
 - 🏫 Suitable for classroom learning and self-study
+- 🎓 Useful for both SAMPAD (gifted) and regular school students
 
 ---
 
@@ -155,10 +207,14 @@ Mathematics Toolbox is available in **three dedicated builds**, optimized for di
 | Version | Target device | Notes |
 |---------|----------------|-------|
 | **Desktop / Laptop** | Windows, Linux, macOS PCs and laptops | Full-featured primary edition |
-| **Surface** | Microsoft Surface tablets and 2-in-1 devices | Touch-friendly layout adapted for Surface |
+| **Surface** | Microsoft Surface tablets and 2-in-1 devices | Larger touch-friendly UI adapted for Surface |
 | **Android** | Android phones and tablets | Mobile-optimized edition |
 
-All versions share the same educational vision and core mathematical capabilities, adapted to the strengths of each platform.
+All versions share the same 40 tools and educational vision, adapted to each platform.
+
+The **web companion** is available at:
+
+**https://sadra-hatami.github.io/Mathematics-Toolbox/**
 
 ---
 
@@ -166,7 +222,7 @@ All versions share the same educational vision and core mathematical capabilitie
 
 ✅ Combines **education** and **problem solving** in one application
 
-✅ More than **40 integrated mathematical tools**
+✅ **40 integrated mathematical tools** (equations, matrices, plotting, geometry, number theory, …)
 
 ✅ Designed specifically for Persian-speaking students
 
@@ -174,69 +230,53 @@ All versions share the same educational vision and core mathematical capabilitie
 
 ✅ Three dedicated versions: Desktop / Laptop, Surface, Android
 
-✅ User-friendly interface
+✅ User-friendly interface (PyQt5)
 
 ✅ Fast and lightweight performance
 
 ✅ Beginner-friendly experience
 
-✅ Educational and practical at the same time
-
 ✅ Helps students prepare for school examinations
-
-✅ Modern graphical user interface built with Python & PyQt5
-
----
-
-# 🎯 Core Advantages
-
-Unlike traditional calculators, Mathematics Toolbox focuses on both **learning** and **solving**.
-
-Instead of giving users only the final answer, the project aims to improve mathematical understanding through educational content and interactive tools.
-
-This makes the application suitable not only for students but also for teachers, parents, and anyone interested in mathematics.
 
 ---
 
 # 🛠️ Technologies
 
-Mathematics Toolbox has been developed using modern technologies focused on desktop application development, educational software design, and user experience.
-
-### Core Technologies
-
 | Technology | Purpose |
 |------------|---------|
 | Python | Main programming language |
 | PyQt5 | Graphical User Interface (GUI) |
-| HTML | Documentation & Web Components |
-| CSS | Styling & User Interface Design |
-| JavaScript | Interactive Web Features |
+| SymPy | Symbolic math (equations, matrices, algebra) |
+| Matplotlib / NumPy | Function plotting and numerical support |
+| HTML / CSS / JavaScript | Web companion & documentation |
 
 ---
 
 # ▶️ Usage
 
-After launching the application, users can access all available mathematical tools directly from the main interface.
+### Desktop application
 
-Typical workflow:
+1. Download the latest build from [Releases](https://github.com/sadra-hatami/Mathematics-Toolbox/releases) (or run the Python source).
+2. Launch the application (Windows / Linux / macOS).
+3. Select a tool from the main grid (40 tools).
+4. Enter inputs → compute → review results and explanations.
+5. Use the **Educational section** for lessons and practice.
 
-1. Select a mathematical tool.
-2. Enter the required values.
-3. Execute the calculation.
-4. View the results instantly.
-5. Use educational sections for learning and practice.
+> First launch may take a moment. For best results on Windows, you may run as Administrator if needed.
 
-The application is designed to minimize complexity and provide a smooth learning experience for students.
+### Website
+
+Open:
+
+**https://sadra-hatami.github.io/Mathematics-Toolbox/**
 
 ---
 
 # 🎓 Target Audience
 
-Mathematics Toolbox has been designed for a wide range of users.
-
 ### Students
 
-- Middle school students
+- Middle school students (grades 7–9)
 - SAMPAD (Gifted School) students
 - Students preparing for examinations
 
@@ -260,14 +300,16 @@ Mathematics Toolbox has been designed for a wide range of users.
 
 https://sadra-hatami.github.io/Mathematics-Toolbox/
 
-The website provides information about the project and serves as its official online presence.
+### GitHub Repository
+
+https://github.com/sadra-hatami/Mathematics-Toolbox/
 
 ---
 
 # 🏆 Project Achievements
 
 - Comprehensive educational mathematics platform
-- 40+ specialized mathematical tools
+- **40 specialized mathematical tools**
 - Fully offline architecture
 - Persian-language educational focus
 - Unified learning and problem-solving environment
@@ -295,14 +337,6 @@ Mathematics Toolbox is an actively evolving project. Future updates may include:
 
 ---
 
-# 💡 Future Vision
-
-The long-term vision of **Mathematics Toolbox** is to become one of the most comprehensive Persian mathematics platforms by combining education, visualization, and intelligent mathematical tools into a unified ecosystem.
-
-The project aims to continuously expand its educational resources while introducing new mathematical utilities that support students, teachers, and mathematics enthusiasts — while remaining usable **fully offline**.
-
----
-
 # ❓ Frequently Asked Questions
 
 ### Is Mathematics Toolbox free?
@@ -319,30 +353,21 @@ It is primarily designed for middle school students, especially Persian-speaking
 
 ### Does it only solve mathematical problems?
 
-No.
-
-Mathematics Toolbox combines **problem-solving tools** with **educational content**, helping users both learn mathematics and solve mathematical problems efficiently.
+No. Mathematics Toolbox combines **problem-solving tools** with **educational content**.
 
 ### Which platforms are supported?
 
-Three dedicated versions are available:
+Three dedicated versions:
 
 - Desktop / Laptop
 - Surface tablets
 - Android
 
+Plus a web companion on GitHub Pages.
+
 ### Which topics are covered?
 
-The project currently includes tools related to:
-
-- Number Theory
-- Algebra
-- Geometry
-- Statistics
-- Probability
-- Sequences
-- Fractions
-- Mathematical Utilities
+Number theory, algebra, equations, matrices, function plotting, geometry, vectors, sequences, fractions, statistics & probability, and a full educational section.
 
 ---
 
