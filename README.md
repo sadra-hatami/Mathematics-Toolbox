@@ -423,7 +423,7 @@ Developer:
 🌐 https://abzarek.ir/service-p/msg/4994415
 
 
-### راه‌های ارتباطی (Communication Links)
+### Communication Links
 🔗 **https://zaya.io/Mathematics-Toolbox**
 
 ---
