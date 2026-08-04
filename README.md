@@ -479,9 +479,7 @@ Your support helps improve future educational software and encourages the contin
 
 <div align="center">
 
-## Designed & Developed with ❤️ for the developer community of Iran and the world by **Sadra Hatami**
-
-### Developed with passion for mathematics and education.
+## Designed & developed with ❤️ for the community of mathematicians and developers in Iran and the world
 
 <br>
 
