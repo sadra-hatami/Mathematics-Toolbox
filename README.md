@@ -28,7 +28,7 @@ An all-in-one application that combines **40+ specialized mathematical tools** w
 ![Education](https://img.shields.io/badge/Education-Mathematics-orange?style=for-the-badge)
 ![Persian](https://img.shields.io/badge/Language-Persian-success?style=for-the-badge)
 ![Offline](https://img.shields.io/badge/Mode-Fully%20Offline-brightgreen?style=for-the-badge)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge&logo=github)
+![[GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge&logo=github)](https://sadra-hatami.github.io/Mathematics-Toolbox/)
 ![GitHub](https://img.shields.io/badge/Open_Source-Project-black?style=for-the-badge&logo=github)
 
 <br>
