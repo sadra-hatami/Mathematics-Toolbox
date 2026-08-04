@@ -215,7 +215,7 @@ Mathematics Toolbox is available in **three dedicated builds**, optimized for di
 | **Surface** | Microsoft Surface tablets and 2-in-1 devices | Larger touch-friendly UI adapted for Surface |
 | **Android** | Android phones and tablets | Mobile-optimized edition |
 
-All versions share the same 40 tools and educational vision, adapted to each platform.
+All versions share the same 40 tools and educational vision, adapted to each platform, except for the Android version which is slightly simpler.
 
 The **web companion** is available at:
 
