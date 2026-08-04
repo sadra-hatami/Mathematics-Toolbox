@@ -26,6 +26,7 @@ An all-in-one application that combines **40+ specialized mathematical tools** w
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Desktop%20%7C%20Surface%20%7C%20Android-0078D6?style=for-the-badge)](https://github.com/sadra-hatami/Mathematics-Toolbox)
 [![Android](https://img.shields.io/badge/Android-7%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/sadra-hatami/Mathematics-Toolbox)
+[![Windows](https://img.shields.io/badge/Windows-7%2B-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/sadra-hatami/Mathematics-Toolbox) [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/sadra-hatami/Mathematics-Toolbox) [![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/sadra-hatami/Mathematics-Toolbox) [![Android](https://img.shields.io/badge/Android-7%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/sadra-hatami/Mathematics-Toolbox)
 ![Education](https://img.shields.io/badge/Education-Mathematics-orange?style=for-the-badge)
 ![Persian](https://img.shields.io/badge/Language-Persian-success?style=for-the-badge)
 ![Offline](https://img.shields.io/badge/Mode-Fully%20Offline-brightgreen?style=for-the-badge)
