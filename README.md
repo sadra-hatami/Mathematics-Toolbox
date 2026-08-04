@@ -24,7 +24,6 @@ An all-in-one application that combines **40+ specialized mathematical tools** w
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-![Desktop](https://img.shields.io/badge/Desktop-Application-0078D6?style=for-the-badge)
 [![Platform](https://img.shields.io/badge/Platform-Desktop%20%7C%20Surface%20%7C%20Android-0078D6?style=for-the-badge)](https://github.com/sadra-hatami/Mathematics-Toolbox)
 ![Education](https://img.shields.io/badge/Education-Mathematics-orange?style=for-the-badge)
 ![Persian](https://img.shields.io/badge/Language-Persian-success?style=for-the-badge)
