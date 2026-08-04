@@ -73,7 +73,7 @@ The project has been designed primarily for Persian-speaking learners and provid
 
 Its goal is not only to perform mathematical calculations but also to help students understand mathematical concepts through organized educational content and practical exercises.
 
-> **Tagline:** *A comprehensive, fully offline Persian desktop platform combining 40+ specialized mathematical tools with complete middle school math education and powerful problem-solving.*
+> **Tagline:** *A comprehensive, fully offline Persian desktop, surface and android platform combining 40+ specialized mathematical tools with complete middle school math education and powerful problem-solving.*
 
 ---
 
