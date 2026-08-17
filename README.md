@@ -35,6 +35,10 @@ An all-in-one application that combines **40+ specialized mathematical tools** w
 
 [🌐 Website](https://sadra-hatami.github.io/Mathematics-Toolbox/)
 •
+[📘 Persian README | نسخه فارسی راهنما](README.fa.md)
+•
+[💻 GitHub](https://github.com/sadra-hatami/Mathematics-Toolbox)
+•
 [📧 Support](mailto:mathematics.toolbox.sadra@gmail.com)
 •
 [🔗 Communication Links](https://zaya.io/Mathematics-Toolbox)
