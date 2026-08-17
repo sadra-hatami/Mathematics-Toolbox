@@ -36,6 +36,10 @@
 
 [🌐 وبسایت](https://sadra-hatami.github.io/Mathematics-Toolbox/)
 •
+[📘 English README | نسخه انگلیسی راهنما](README.md)
+•
+[💻 گیت‌هاب](https://github.com/sadra-hatami/Mathematics-Toolbox)
+•
 [📧 پشتیبانی](mailto:mathematics.toolbox.sadra@gmail.com)
 •
 [🔗 راه‌های ارتباطی](https://zaya.io/Mathematics-Toolbox)
