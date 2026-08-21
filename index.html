@@ -800,8 +800,8 @@
 .ci { display: flex; gap: 0.5rem; }
 .ci input { flex: 1; padding: 0.6rem 1rem; border-radius: 10px; border: 1px solid #333; background: #1e1e1e; color: #fff; font-family: inherit; }
 iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #333; border-radius: 14px; background: #fff; }
-.cd { width: 100%; padding: 1rem; font-size: 1.6rem; text-align: left; direction: ltr; background: #1a1a1a; border: 1px solid #333; border-radius: 12px; color: #FF9800; margin-bottom: 0.7rem; font-family: monospace; }
-.ck { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.45rem; }
+.cd { width: 100%; padding: 1.05rem 1.15rem; font-size: 1.55rem; text-align: left; direction: ltr; unicode-bidi: isolate; background: #1a1a1a; border: 1px solid #333; border-radius: 12px; color: #FF9800; margin-bottom: 0.7rem; font-family: 'Vazir', Consolas, monospace; letter-spacing: 0.5px; overflow-x: auto; white-space: nowrap; }
+.ck { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.45rem; direction: ltr; }
 .ck button {
   padding: 0.9rem; border-radius: 10px; border: 1px solid #333;
   background: #2a2a2a; color: #fff; font-size: 1.1rem; cursor: pointer; font-family: inherit;
@@ -1206,7 +1206,7 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 <div id="page-tools" class="page"><div class="container" style="padding-top:1.4rem">
 <div style="text-align:center"><h2 class="st">ابزارهای تعاملی آنلاین</h2><p class="ss">بدون نیاز به نصب — همین الان استفاده کنید - لطفا اعداد را به انگلیسی وارد کنید</p></div>
 <div class="grid">
-<div class="card" onclick="showPage('calc')"><div class="ic"><i class="fas fa-calculator"></i></div><h4>ماشین حساب پیشرفته</h4><p>عملیات پایه، توان و درصد</p></div>
+<div class="card" onclick="showPage('calc')"><div class="ic"><i class="fas fa-calculator"></i></div><h4>ماشین حساب پیشرفته</h4><p>عملیات پایه و پیشرفته</p></div>
 <div class="card" onclick="showPage('gcdlcm')"><div class="ic"><i class="fas fa-divide"></i></div><h4>ب.م.م و ک.م.م</h4><p>چند عدد همزمان</p></div>
 <div class="card" onclick="showPage('sieve')"><div class="ic"><i class="fas fa-sort-numeric-up-alt"></i></div><h4>غربال اعداد اول</h4><p>یافتن در بازه دلخواه</p></div>
 <div class="card" onclick="showPage('base')"><div class="ic"><i class="fas fa-exchange-alt"></i></div><h4>تبدیل مبنا</h4><p>مبنای ۲، ۸، ۱۰ و ۱۶</p></div>
@@ -1214,7 +1214,7 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 <div class="card" onclick="showPage('fib')"><div class="ic"><i class="fas fa-infinity"></i></div><h4>فیبوناچی و فیثاغورثی</h4><p>جمله n-ام و سه‌تایی‌ها</p></div>
 <div class="card" onclick="showPage('fraction')"><div class="ic"><i class="fas fa-percentage"></i></div><h4>ماشین حساب کسرها</h4><p>چهار عمل اصلی روی کسر</p></div>
 <div class="card" onclick="showPage('heron')"><div class="ic"><i class="fas fa-draw-polygon"></i></div><h4>فرمول هرون</h4><p>مساحت مثلث با سه ضلع</p></div>
-<div class="card" onclick="showPage('linear')"><div class="ic"><i class="fas fa-project-diagram"></i></div><h4>دستگاه معادلات خطی</h4><p>حل ۲×۲ و ۳×۳</p></div>
+<div class="card" onclick="showPage('linear')"><div class="ic"><i class="fas fa-project-diagram"></i></div><h4>دستگاه معادلات خطی</h4><p>حل ۲×۲، ۳×۳ و ۴×۴</p></div>
 <div class="card" onclick="showPage('matrix')"><div class="ic"><i class="fas fa-th"></i></div><h4>عملیات ماتریس ۲×۲</h4><p>جمع، تفریق، ضرب، دترمینان</p></div>
 <div class="card" onclick="showPage('numanalysis')"><div class="ic"><i class="fas fa-search-plus"></i></div><h4>تحلیل کامل یک عدد</h4><p>ویژگی‌های کامل عدد</p></div>
 <div class="card" onclick="showPage('quadratic')"><div class="ic"><i class="fas fa-chart-line"></i></div><h4>معادله درجه دوم</h4><p>ریشه‌های دقیق</p></div>
@@ -1248,15 +1248,19 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 
 <div id="page-calc" class="page"><div class="container panel">
 <button class="btn btn-o btn-sm" onclick="showPage('tools')" style="margin-bottom:.8rem"><i class="fas fa-arrow-right"></i> بازگشت</button>
-<h2>ماشین حساب پیشرفته</h2><p class="d">عملیات پایه، توان و درصد</p>
+<h2>ماشین حساب پیشرفته</h2><p class="d">عملیات پایه و پیشرفته</p>
 <input class="cd" id="cd" readonly value="0" dir="ltr">
 <div class="ck">
-<button class="fn" onclick="cC()">پاک</button><button class="fn" onclick="cB()">⌫</button><button class="fn" onclick="cA('%')">٪</button><button class="op" onclick="cA('/')">÷</button>
-<button onclick="cA('7')">۷</button><button onclick="cA('8')">۸</button><button onclick="cA('9')">۹</button><button class="op" onclick="cA('*')">×</button>
-<button onclick="cA('4')">۴</button><button onclick="cA('5')">۵</button><button onclick="cA('6')">۶</button><button class="op" onclick="cA('-')">−</button>
+<button class="fn" onclick="cC()">پاک</button><button class="fn" onclick="cB()">⌫</button><button class="fn" onclick="cA('%')">٪</button><button class="op" onclick="cA('÷')">÷</button>
+<button class="fn" onclick="cFn('sin')">sin</button><button class="fn" onclick="cFn('cos')">cos</button><button class="fn" onclick="cFn('tan')">tan</button><button class="fn" onclick="cFn('cot')">cot</button>
+<button onclick="cA('7')">۷</button><button onclick="cA('8')">۸</button><button onclick="cA('9')">۹</button><button class="op" onclick="cA('×')">×</button>
+<button onclick="cA('4')">۴</button><button onclick="cA('5')">۵</button><button onclick="cA('6')">۶</button><button class="op" onclick="cA('−')">−</button>
 <button onclick="cA('1')">۱</button><button onclick="cA('2')">۲</button><button onclick="cA('3')">۳</button><button class="op" onclick="cA('+')">+</button>
-<button onclick="cA('0')">۰</button><button onclick="cA('.')">.</button><button class="fn" onclick="cA('**')">xʸ</button><button class="eq" onclick="cE()">=</button>
-</div></div></div>
+<button onclick="cA('0')">۰</button><button onclick="cA('.')">.</button><button class="fn" onclick="cA('^')">xʸ</button><button class="eq" onclick="cE()">=</button>
+<button class="fn" onclick="cFn('sqrt')">√</button><button class="fn" onclick="cA('(')">(</button><button class="fn" onclick="cA(')')">)</button><button class="fn" onclick="cA('π')">π</button>
+</div>
+<p style="color:var(--text2);font-size:.82rem;margin-top:.6rem;text-align:center">توابع مثلثاتی بر حسب <strong>رادیان</strong> هستند.<br>برای درجه مثلاً: sin(۳۰×π÷۱۸۰) یا cos(π÷۲)</p>
+</div></div>
 
 <div id="page-gcdlcm" class="page"><div class="container panel">
 <button class="btn btn-o btn-sm" onclick="showPage('tools')" style="margin-bottom:.8rem"><i class="fas fa-arrow-right"></i> بازگشت</button>
@@ -1317,7 +1321,8 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 <div id="page-linear" class="page"><div class="container panel">
 <button class="btn btn-o btn-sm" onclick="showPage('tools')" style="margin-bottom:.8rem"><i class="fas fa-arrow-right"></i> بازگشت</button>
 <h2>دستگاه معادلات خطی</h2>
-<div class="row"><label>نوع:</label><select id="ls" onchange="buildLin()"><option value="2">دو معادله دو مجهول</option><option value="3">سه معادله سه مجهول</option></select></div>
+<p class="d">حل دستگاه ۲×۲، ۳×۳ و ۴×۴ با روش حذف گاوسی</p>
+<div class="row"><label>نوع:</label><select id="ls" onchange="buildLin()"><option value="2">دو معادله دو مجهول (۲×۲)</option><option value="3">سه معادله سه مجهول (۳×۳)</option><option value="4">چهار معادله چهار مجهول (۴×۴)</option></select></div>
 <div id="li"></div>
 <button class="btn btn-p" onclick="doLin()">حل دستگاه</button>
 <div class="res" id="lr"></div></div></div>
@@ -1694,11 +1699,13 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 <div id="page-eqsolver" class="page"><div class="container panel">
 <button class="btn btn-o btn-sm" onclick="showPage('home')" style="margin-bottom:.8rem"><i class="fas fa-arrow-right"></i> بازگشت</button>
 <h2>حل‌کننده هوشمند معادلات</h2>
-<p class="d">حل معادله خطی، درجه دوم و دستگاه معادلات با توضیح گام‌به‌گام</p>
-<div class="eq-tabs">
-<button class="eq-tab active" onclick="eqTab('lin',this)">معادله خطی</button>
+<p class="d">حل معادله خطی، درجه دوم، دستگاه ۲×۲ / ۳×۳ / ۴×۴ و عبارت آزاد</p>
+<div class="eq-tabs" style="flex-wrap:wrap">
+<button class="eq-tab active" onclick="eqTab('lin',this)">خطی</button>
 <button class="eq-tab" onclick="eqTab('quad',this)">درجه دوم</button>
 <button class="eq-tab" onclick="eqTab('sys',this)">دستگاه ۲×۲</button>
+<button class="eq-tab" onclick="eqTab('sys3',this)">دستگاه ۳×۳</button>
+<button class="eq-tab" onclick="eqTab('sys4',this)">دستگاه ۴×۴</button>
 <button class="eq-tab" onclick="eqTab('free',this)">عبارت آزاد</button>
 </div>
 <div id="eq-lin">
@@ -1714,7 +1721,22 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 <div id="eq-sys" style="display:none">
 <div class="row"><input id="s11" placeholder="a1" dir="ltr" style="max-width:70px" value="2"> x + <input id="s12" placeholder="b1" dir="ltr" style="max-width:70px" value="1"> y = <input id="s13" placeholder="c1" dir="ltr" style="max-width:70px" value="5"></div>
 <div class="row"><input id="s21" placeholder="a2" dir="ltr" style="max-width:70px" value="1"> x + <input id="s22" placeholder="b2" dir="ltr" style="max-width:70px" value="-1"> y = <input id="s23" placeholder="c2" dir="ltr" style="max-width:70px" value="1"></div>
-<button class="btn btn-p" onclick="solveSysEq()">حل سیستم</button>
+<button class="btn btn-p" onclick="solveSysEq()">حل سیستم ۲×۲</button>
+</div>
+<div id="eq-sys3" style="display:none">
+<p style="color:var(--muted);font-size:.85rem;margin-bottom:.5rem">a₁x + b₁y + c₁z = d₁ &nbsp;|&nbsp; a₂x + b₂y + c₂z = d₂ &nbsp;|&nbsp; a₃x + b₃y + c₃z = d₃</p>
+<div class="row" style="flex-wrap:wrap;gap:4px;margin-bottom:6px"><input id="t11" value="1" dir="ltr" style="max-width:52px">x + <input id="t12" value="1" dir="ltr" style="max-width:52px">y + <input id="t13" value="1" dir="ltr" style="max-width:52px">z = <input id="t14" value="6" dir="ltr" style="max-width:52px"></div>
+<div class="row" style="flex-wrap:wrap;gap:4px;margin-bottom:6px"><input id="t21" value="0" dir="ltr" style="max-width:52px">x + <input id="t22" value="2" dir="ltr" style="max-width:52px">y + <input id="t23" value="1" dir="ltr" style="max-width:52px">z = <input id="t24" value="5" dir="ltr" style="max-width:52px"></div>
+<div class="row" style="flex-wrap:wrap;gap:4px;margin-bottom:6px"><input id="t31" value="1" dir="ltr" style="max-width:52px">x + <input id="t32" value="0" dir="ltr" style="max-width:52px">y + <input id="t33" value="1" dir="ltr" style="max-width:52px">z = <input id="t34" value="4" dir="ltr" style="max-width:52px"></div>
+<button class="btn btn-p" onclick="solveSys3()">حل سیستم ۳×۳</button>
+</div>
+<div id="eq-sys4" style="display:none">
+<p style="color:var(--muted);font-size:.85rem;margin-bottom:.5rem">چهار معادله و چهار مجهول (x, y, z, w)</p>
+<div class="row" style="flex-wrap:wrap;gap:3px;margin-bottom:5px"><input id="u11" value="1" dir="ltr" style="max-width:46px">x+<input id="u12" value="0" dir="ltr" style="max-width:46px">y+<input id="u13" value="0" dir="ltr" style="max-width:46px">z+<input id="u14" value="0" dir="ltr" style="max-width:46px">w=<input id="u15" value="1" dir="ltr" style="max-width:46px"></div>
+<div class="row" style="flex-wrap:wrap;gap:3px;margin-bottom:5px"><input id="u21" value="0" dir="ltr" style="max-width:46px">x+<input id="u22" value="1" dir="ltr" style="max-width:46px">y+<input id="u23" value="0" dir="ltr" style="max-width:46px">z+<input id="u24" value="0" dir="ltr" style="max-width:46px">w=<input id="u25" value="2" dir="ltr" style="max-width:46px"></div>
+<div class="row" style="flex-wrap:wrap;gap:3px;margin-bottom:5px"><input id="u31" value="0" dir="ltr" style="max-width:46px">x+<input id="u32" value="0" dir="ltr" style="max-width:46px">y+<input id="u33" value="1" dir="ltr" style="max-width:46px">z+<input id="u34" value="0" dir="ltr" style="max-width:46px">w=<input id="u35" value="3" dir="ltr" style="max-width:46px"></div>
+<div class="row" style="flex-wrap:wrap;gap:3px;margin-bottom:5px"><input id="u41" value="0" dir="ltr" style="max-width:46px">x+<input id="u42" value="0" dir="ltr" style="max-width:46px">y+<input id="u43" value="0" dir="ltr" style="max-width:46px">z+<input id="u44" value="1" dir="ltr" style="max-width:46px">w=<input id="u45" value="4" dir="ltr" style="max-width:46px"></div>
+<button class="btn btn-p" onclick="solveSys4()">حل سیستم ۴×۴</button>
 </div>
 <div id="eq-free" style="display:none">
 <div class="row"><label>معادله:</label><input id="eqi" placeholder="x^3-3*x=110  یا  x^2-5x+6=0" dir="ltr"></div>
@@ -1997,7 +2019,7 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 </div>
 </div></div>
 
-<div <div id="page-geomgames" class="page"><div class="container panel" style="max-width:640px">
+<div id="page-geomgames" class="page"><div class="container panel" style="max-width:640px">
 <button class="btn btn-o btn-sm" onclick="showPage('home')" style="margin-bottom:.8rem"><i class="fas fa-arrow-right"></i> بازگشت</button>
 <h2>مینی‌گیم‌های هندسی</h2>
 <p class="d">چالش مفاهیم هندسه — مثلث، دایره، چندضلعی و بیشتر</p>
@@ -2006,11 +2028,12 @@ iframe.geo { width: 100%; height: 75vh; min-height: 480px; border: 2px solid #33
 <div id="geoBody">
 <button class="btn btn-p" onclick="startGeoQuiz()">شروع چالش</button>
 </div>
+<div class="gs" id="geoScore">امتیاز: ۰</div>
 </div>
 <div class="gc">
 <h3 style="color:var(--accent)">حدس مساحت / محیط</h3>
-<div id="gaq" style="margin:.7rem 0;font-size:1.1rem">—</div>
-<input id="gaa" type="number" placeholder="پاسخ" dir="ltr" style="padding:.5rem;border-radius:8px;border:2px solid var(--border);background:var(--bg2);color:#fff;width:130px;text-align:center">
+<div id="gaq" style="margin:.7rem 0;font-size:1.1rem;font-weight:600;min-height:2.2em">برای شروع «سوال جدید» را بزنید</div>
+<input id="gaa" type="number" placeholder="پاسخ عددی" dir="ltr" style="padding:.5rem;border-radius:8px;border:2px solid var(--border);background:var(--bg2);color:#fff;width:140px;text-align:center">
 <div class="brows" style="justify-content:center;margin-top:.5rem">
 <button class="btn btn-p btn-sm" onclick="chkGA()">بررسی</button>
 <button class="btn btn-o btn-sm" onclick="startGA()">سوال جدید</button>
@@ -2549,11 +2572,66 @@ function fact(n){var r=1;for(var i=2;i<=n;i++)r*=i;return r}
 function divs(n){n=Math.abs(n);var d=[];for(var i=1;i*i<=n;i++)if(n%i===0){d.push(i);if(i*i!==n)d.push(n/i)}return d.sort(function(a,b){return a-b})}
 function phi(n){var r=n;for(var p=2;p*p<=n;p++)if(n%p===0){while(n%p===0)n/=p;r-=r/p}if(n>1)r-=r/n;return r}
 
+/* ===== ماشین حساب پیشرفته — نمایش تمیز + ارزیابی امن ===== */
 var cx="";
-function cA(s){if(cx==="0"&&s!=="."&&s!=="**")cx="";cx+=s;document.getElementById("cd").value=cx}
-function cC(){cx="";document.getElementById("cd").value="0"}
-function cB(){cx=cx.slice(0,-1);document.getElementById("cd").value=cx||"0"}
-function cE(){try{var r=Function('"use strict";return('+cx.replace(/%/g,"/100")+')')();document.getElementById("cd").value=r;cx=String(r)}catch(e){document.getElementById("cd").value="خطا";cx=""}}
+function cDisp(){var el=document.getElementById("cd");if(el)el.value=cx||"0"}
+function cA(s){
+  if(cx==="0"||cx==="خطا"){
+    if(s==="."||s==="("||s==="π"||s==="√("||s==="sin("||s==="cos("||s==="tan("||s==="cot("){cx=s}
+    else if(s===")"||s==="**"||s==="^"||s==="+"||s==="-"||s==="*"||s==="/"||s==="×"||s==="÷"||s==="−"||s==="%"){cx="0"+s}
+    else{cx=s}
+  }else{
+    cx+=s;
+  }
+  cDisp();
+}
+function cC(){cx="";cDisp()}
+function cB(){
+  if(!cx||cx==="0"||cx==="خطا"){cx="";cDisp();return}
+  var tokens=["sin(","cos(","tan(","cot(","√(","**","π"];
+  var cut=false;
+  for(var i=0;i<tokens.length;i++){
+    var t=tokens[i];
+    if(cx.length>=t.length && cx.slice(-t.length)===t){cx=cx.slice(0,-t.length);cut=true;break}
+  }
+  if(!cut)cx=cx.slice(0,-1);
+  cDisp();
+}
+function cFn(name){
+  if(cx==="0"||cx==="خطا")cx="";
+  var map={sin:"sin(",cos:"cos(",tan:"tan(",cot:"cot(",sqrt:"√("};
+  cx+=(map[name]||(name+"("));
+  cDisp();
+}
+function cToExpr(s){
+  var e=String(s);
+  e=e.replace(/×/g,"*").replace(/÷/g,"/").replace(/−/g,"-").replace(/–/g,"-");
+  e=e.replace(/π/g,"Math.PI");
+  e=e.replace(/√\(/g,"Math.sqrt(");
+  e=e.replace(/sin\(/g,"Math.sin(");
+  e=e.replace(/cos\(/g,"Math.cos(");
+  e=e.replace(/tan\(/g,"Math.tan(");
+  e=e.replace(/cot\(([^)]*)\)/g,"(1/Math.tan($1))");
+  e=e.replace(/(\d+(?:\.\d+)?)\s*%/g,"($1/100)");
+  e=e.replace(/%/g,"/100");
+  e=e.replace(/\^/g,"**");
+  return e;
+}
+function cE(){
+  try{
+    if(!cx||cx==="0"){cDisp();return}
+    var expr=cToExpr(cx);
+    var r=Function('"use strict";return('+expr+')')();
+    if(typeof r!=="number"||!isFinite(r))throw 0;
+    r=Math.round(r*1e12)/1e12;
+    cx=String(r);
+    cDisp();
+  }catch(err){
+    cx="خطا";
+    cDisp();
+    setTimeout(function(){if(cx==="خطا"){cx="";cDisp()}},1200);
+  }
+}
 
 function doGcd(){var nums=(document.getElementById("gi").value.match(/-?\d+/g)||[]).map(Number);var b=document.getElementById("gr");if(nums.length<2){b.textContent="حداقل دو عدد وارد کنید";b.className="res err";return}var g=nums[0],l=nums[0];for(var i=1;i<nums.length;i++){g=gcd(g,nums[i]);l=lcm(l,nums[i])}b.textContent="اعداد: "+nums.join(" ، ")+"\n\nبزرگ‌ترین مقسوم‌علیه مشترک = "+g+"\nکوچک‌ترین مضرب مشترک = "+l;b.className="res ok";addXP(5)}
 function doSieve(){var s=+document.getElementById("ss").value||1,e=+document.getElementById("se").value||100;var b=document.getElementById("sr");if(e<s||e-s>1e5){b.textContent="بازه نامعتبر است";b.className="res err";return}var p=Array(e+1).fill(true);p[0]=p[1]=false;for(var i=2;i*i<=e;i++)if(p[i])for(var j=i*i;j<=e;j+=i)p[j]=false;var r=[];for(var i=Math.max(2,s);i<=e;i++)if(p[i])r.push(i);b.textContent="بازه از "+s+" تا "+e+"\nتعداد اعداد اول: "+r.length+"\n\n"+r.join("  ");b.className="res ok"}
@@ -2565,8 +2643,8 @@ function doFib(){var n=+document.getElementById("fn").value;var b=document.getEl
 function doPyth(){var n=+document.getElementById("fn").value;var b=document.getElementById("fr");if(n<1||n>40){b.textContent="n باید بین ۱ تا ۴۰ باشد";return}var t=[];for(var m=2;t.length<n;m++)for(var n2=1;n2<m&&t.length<n;n2++)if((m-n2)%2&&gcd(m,n2)===1){var a=m*m-n2*n2,bb=2*m*n2,c=m*m+n2*n2;t.push([Math.min(a,bb),Math.max(a,bb),c])}var x=t[n-1];b.textContent=n+"-امین سه‌تایی فیثاغورثی اولیه:\n("+x[0]+" ، "+x[1]+" ، "+x[2]+")\n\nبررسی: "+x[0]+"² + "+x[1]+"² = "+x[2]+"²";b.className="res ok"}
 function doFrac(){var a1=+document.getElementById("f1n").value,b1=+document.getElementById("f1d").value,a2=+document.getElementById("f2n").value,b2=+document.getElementById("f2d").value,op=document.getElementById("fo").value;var b=document.getElementById("frc");if(!b1||!b2){b.textContent="مخرج نمی‌تواند صفر باشد";b.className="res err";return}var num,den;if(op==="+"){num=a1*b2+a2*b1;den=b1*b2}else if(op==="-"){num=a1*b2-a2*b1;den=b1*b2}else if(op==="*"){num=a1*a2;den=b1*b2}else{num=a1*b2;den=b1*a2}if(den<0){num=-num;den=-den}var g=gcd(num,den);num/=g;den/=g;b.textContent="نتیجه = "+num+"/"+den+(den===1?" = "+num:"");b.className="res ok"}
 function doHeron(){var a=parseFloat(document.getElementById("heron-a").value),bb=parseFloat(document.getElementById("heron-b").value),c=parseFloat(document.getElementById("heron-c").value);var box=document.getElementById("hr");if(isNaN(a)||isNaN(bb)||isNaN(c)||a<=0||bb<=0||c<=0){box.textContent="لطفاً سه عدد مثبت وارد کنید";box.className="res err";return}if(a+bb<=c||a+c<=bb||bb+c<=a){box.textContent="این سه عدد نمی‌توانند اضلاع یک مثلث باشند (نامساوی مثلثی برقرار نیست)";box.className="res err";return}var s=(a+bb+c)/2;var area=Math.sqrt(s*(s-a)*(s-bb)*(s-c));box.textContent="ضلع‌ها: a="+a+" ، b="+bb+" ، c="+c+"\nنیم‌محیط s = "+s+"\nمساحت مثلث = "+area.toFixed(6);box.className="res ok";addXP(5)}
-function buildLin(){var sz=+document.getElementById("ls").value;var c=document.getElementById("li");var v=["x","y","z"];var h="";for(var i=0;i<sz;i++){h+='<div class="row" style="flex-wrap:nowrap">';for(var j=0;j<sz;j++){h+='<input id="l'+i+j+'" placeholder="'+v[j]+'" dir="ltr" style="max-width:64px;text-align:center"> '+v[j];if(j<sz-1)h+=" + "}h+=' = <input id="l'+i+'c" placeholder="عدد ثابت" dir="ltr" style="max-width:70px;text-align:center"></div>'}c.innerHTML=h}
-function doLin(){var sz=+document.getElementById("ls").value;var b=document.getElementById("lr");try{var M=[];for(var i=0;i<sz;i++){var r=[];for(var j=0;j<sz;j++){var v=parseFloat(document.getElementById("l"+i+j).value);if(isNaN(v))throw 0;r.push(v)}var c=parseFloat(document.getElementById("l"+i+"c").value);if(isNaN(c))throw 0;r.push(c);M.push(r)}for(var col=0;col<sz;col++){var piv=col;for(var r=col+1;r<sz;r++)if(Math.abs(M[r][col])>Math.abs(M[piv][col]))piv=r;if(Math.abs(M[piv][col])<1e-12){b.textContent="دستگاه جواب یکتا ندارد";b.className="res err";return}var tmp=M[col];M[col]=M[piv];M[piv]=tmp;var d=M[col][col];for(var j=col;j<=sz;j++)M[col][j]/=d;for(var r=0;r<sz;r++){if(r===col)continue;var f=M[r][col];for(var j=col;j<=sz;j++)M[r][j]-=f*M[col][j]}}var vs=["x","y","z"];var t="جواب دستگاه:\n\n";for(var i=0;i<sz;i++)t+=vs[i]+" = "+(+M[i][sz].toFixed(8))+"\n";b.textContent=t;b.className="res ok"}catch(e){b.textContent="لطفاً همه ضرایب را وارد کنید";b.className="res err"}}
+function buildLin(){var sz=+document.getElementById("ls").value;var c=document.getElementById("li");var v=["x","y","z","w"];var h="";for(var i=0;i<sz;i++){h+='<div class="row" style="flex-wrap:wrap;gap:4px;margin-bottom:6px">';for(var j=0;j<sz;j++){h+='<input id="l'+i+j+'" placeholder="'+v[j]+'" dir="ltr" style="max-width:58px;text-align:center"> '+v[j];if(j<sz-1)h+=" + "}h+=' = <input id="l'+i+'c" placeholder="ثابت" dir="ltr" style="max-width:64px;text-align:center"></div>'}c.innerHTML=h;if(document.getElementById("lr"))document.getElementById("lr").textContent=""}
+function doLin(){var sz=+document.getElementById("ls").value;var b=document.getElementById("lr");try{var M=[];for(var i=0;i<sz;i++){var r=[];for(var j=0;j<sz;j++){var v=parseFloat(document.getElementById("l"+i+j).value);if(isNaN(v))throw 0;r.push(v)}var c=parseFloat(document.getElementById("l"+i+"c").value);if(isNaN(c))throw 0;r.push(c);M.push(r)}for(var col=0;col<sz;col++){var piv=col;for(var r=col+1;r<sz;r++)if(Math.abs(M[r][col])>Math.abs(M[piv][col]))piv=r;if(Math.abs(M[piv][col])<1e-12){b.textContent="دستگاه جواب یکتا ندارد (دترمینان صفر یا سطرهای وابسته)";b.className="res err";return}var tmp=M[col];M[col]=M[piv];M[piv]=tmp;var d=M[col][col];for(var j=col;j<=sz;j++)M[col][j]/=d;for(var r=0;r<sz;r++){if(r===col)continue;var f=M[r][col];for(var j=col;j<=sz;j++)M[r][j]-=f*M[col][j]}}var vs=["x","y","z","w"];var t="جواب دستگاه "+sz+"×"+sz+":\n\n";for(var i=0;i<sz;i++)t+=vs[i]+" = "+(+M[i][sz].toFixed(10))+"\n";b.textContent=t;b.className="res ok";if(typeof addXP==="function")addXP(8)}catch(e){b.textContent="لطفاً همه ضرایب را به صورت عددی وارد کنید";b.className="res err"}}
 function mat(op){var A=[[+document.getElementById("a00").value||0,+document.getElementById("a01").value||0],[+document.getElementById("a10").value||0,+document.getElementById("a11").value||0]];var B=[[+document.getElementById("b00").value||0,+document.getElementById("b01").value||0],[+document.getElementById("b10").value||0,+document.getElementById("b11").value||0]];var box=document.getElementById("mr");var R;if(op==="add")R=[[A[0][0]+B[0][0],A[0][1]+B[0][1]],[A[1][0]+B[1][0],A[1][1]+B[1][1]]];else if(op==="sub")R=[[A[0][0]-B[0][0],A[0][1]-B[0][1]],[A[1][0]-B[1][0],A[1][1]-B[1][1]]];else if(op==="mul")R=[[A[0][0]*B[0][0]+A[0][1]*B[1][0],A[0][0]*B[0][1]+A[0][1]*B[1][1]],[A[1][0]*B[0][0]+A[1][1]*B[1][0],A[1][0]*B[0][1]+A[1][1]*B[1][1]]];else if(op==="det"){box.textContent="دترمینان ماتریس A = "+(A[0][0]*A[1][1]-A[0][1]*A[1][0]);box.className="res ok";return}box.textContent="ماتریس نتیجه:\n[ "+R[0][0]+"   "+R[0][1]+" ]\n[ "+R[1][0]+"   "+R[1][1]+" ]";box.className="res ok"}
 function doNA(){var n=+document.getElementById("na").value;var b=document.getElementById("nar");if(!n&&n!==0){b.textContent="لطفاً یک عدد وارد کنید";return}var d=divs(n);var t=Math.abs(n),f=[];for(var p=2;p*p<=t;p++)while(t%p===0){f.push(p);t/=p}if(t>1)f.push(t);b.textContent="عدد: "+n+"\nزوج یا فرد: "+(n%2===0?"زوج":"فرد")+"\nعدد اول: "+(isP(n)?"بله ✓":"خیر")+"\nشمارنده‌ها ("+d.length+" عدد): "+d.join(" ، ")+"\nعوامل اول: "+(f.join(" × ")||"—")+"\nتابع فی اویلر φ(|n|) = "+phi(Math.abs(n));b.className="res ok"}
 function doQuad(){var a=+document.getElementById("qa").value,bb=+document.getElementById("qb").value,c=+document.getElementById("qc").value;var b=document.getElementById("qr");if(!a){b.textContent="ضریب a نمی‌تواند صفر باشد";b.className="res err";return}var d=bb*bb-4*a*c;var t="معادله: "+a+"x² + ("+bb+")x + ("+c+") = 0\nدلتا (Δ) = "+d+"\n\n";if(d>0){var x1=(-bb+Math.sqrt(d))/(2*a),x2=(-bb-Math.sqrt(d))/(2*a);t+="دو ریشه حقیقی:\nx₁ = "+x1+"\nx₂ = "+x2}else if(d===0)t+="ریشه مضاعف:\nx = "+(-bb/(2*a));else{var re=-bb/(2*a),im=Math.sqrt(-d)/(2*a);t+="ریشه‌های مختلط:\nx₁ = "+re+" + "+im+"i\nx₂ = "+re+" − "+im+"i"}b.textContent=t;b.className="res ok"}
@@ -2886,7 +2964,7 @@ var toolsList=[
 {c:"دنباله‌ها",n:"فیبوناچی",d:"جمله n-ام دنباله",i:"fa-infinity"},
 {c:"دنباله‌ها",n:"سه‌تایی فیثاغورثی",d:"n-امین سه‌تایی",i:"fa-square-root-variable"},
 {c:"جبر",n:"معادله درجه دوم",d:"یافتن ریشه‌ها",i:"fa-chart-line"},
-{c:"جبر",n:"دستگاه معادلات",d:"حل ۲×۲ و ۳×۳",i:"fa-project-diagram"},
+{c:"جبر",n:"دستگاه معادلات",d:"حل ۲×۲، ۳×۳ و ۴×۴",i:"fa-project-diagram"},
 {c:"جبر",n:"ماتریس",d:"جمع، ضرب، دترمینان",i:"fa-th"},
 {c:"جبر",n:"ماشین حساب",d:"علمی پیشرفته",i:"fa-calculator"},
 {c:"جبر",n:"ساده‌سازی جبری",d:"جمع و تفریق عبارات",i:"fa-expand-arrows-alt"},
@@ -2997,7 +3075,10 @@ function fmtLin(coef,v,c){var s=""; if(coef) s+=(coef===1?v:(coef===-1?"-"+v:coe
 
 
 /* ===== Equation tabs ===== */
-function eqTab(id,btn){["lin","quad","sys","free"].forEach(function(t){var e=document.getElementById("eq-"+t);if(e)e.style.display=t===id?"":"none"});document.querySelectorAll(".eq-tab").forEach(function(b){b.classList.remove("active")});if(btn)btn.classList.add("active");document.getElementById("eqr").textContent=""}
+function eqTab(id,btn){["lin","quad","sys","sys3","sys4","free"].forEach(function(t){var e=document.getElementById("eq-"+t);if(e)e.style.display=t===id?"":"none"});document.querySelectorAll(".eq-tab").forEach(function(b){b.classList.remove("active")});if(btn)btn.classList.add("active");var r=document.getElementById("eqr");if(r)r.textContent=""}
+function gaussSolve(M,n){for(var col=0;col<n;col++){var piv=col;for(var r=col+1;r<n;r++)if(Math.abs(M[r][col])>Math.abs(M[piv][col]))piv=r;if(Math.abs(M[piv][col])<1e-12)return null;var tmp=M[col];M[col]=M[piv];M[piv]=tmp;var d=M[col][col];for(var j=col;j<=n;j++)M[col][j]/=d;for(var r=0;r<n;r++){if(r===col)continue;var f=M[r][col];for(var j=col;j<=n;j++)M[r][j]-=f*M[col][j]}}var sol=[];for(var i=0;i<n;i++)sol.push(M[i][n]);return sol}
+function solveSys3(){var box=document.getElementById("eqr");try{var ids=[["t11","t12","t13","t14"],["t21","t22","t23","t24"],["t31","t32","t33","t34"]];var M=[];for(var i=0;i<3;i++){var row=[];for(var j=0;j<4;j++){var v=parseFloat(document.getElementById(ids[i][j]).value);if(isNaN(v))throw 0;row.push(v)}M.push(row)}var sol=gaussSolve(M,3);if(!sol){box.textContent="دستگاه جواب یکتا ندارد";box.className="res err";return}box.textContent="جواب دستگاه ۳×۳:\n\nx = "+(+sol[0].toFixed(10))+"\ny = "+(+sol[1].toFixed(10))+"\nz = "+(+sol[2].toFixed(10));box.className="res ok";if(typeof addXP==="function")addXP(10)}catch(e){box.textContent="لطفاً همه ضرایب را وارد کنید";box.className="res err"}}
+function solveSys4(){var box=document.getElementById("eqr");try{var ids=[["u11","u12","u13","u14","u15"],["u21","u22","u23","u24","u25"],["u31","u32","u33","u34","u35"],["u41","u42","u43","u44","u45"]];var M=[];for(var i=0;i<4;i++){var row=[];for(var j=0;j<5;j++){var v=parseFloat(document.getElementById(ids[i][j]).value);if(isNaN(v))throw 0;row.push(v)}M.push(row)}var sol=gaussSolve(M,4);if(!sol){box.textContent="دستگاه جواب یکتا ندارد";box.className="res err";return}box.textContent="جواب دستگاه ۴×۴:\n\nx = "+(+sol[0].toFixed(10))+"\ny = "+(+sol[1].toFixed(10))+"\nz = "+(+sol[2].toFixed(10))+"\nw = "+(+sol[3].toFixed(10));box.className="res ok";if(typeof addXP==="function")addXP(12)}catch(e){box.textContent="لطفاً همه ضرایب را وارد کنید";box.className="res err"}}
 function solveLinEq(){var a=parseFloat(document.getElementById("ela").value),b=parseFloat(document.getElementById("elb").value);var box=document.getElementById("eqr");if(isNaN(a)||isNaN(b)){box.textContent="مقادیر را وارد کنید";box.className="res err";return}if(a===0){box.textContent=b===0?"بی‌نهایت جواب (اتحاد)":"بدون جواب (تناقض)";box.className="res err";return}var x=-b/a;box.textContent="معادله: "+a+"x + ("+b+") = 0\n\nجواب: x = "+x+"\n\n✨ توضیح: با انتقال b به سمت راست و تقسیم بر a به جواب می‌رسیم.";box.className="res ok";addXP(5)}
 function solveQuadEq(){var a=parseFloat(document.getElementById("eqa").value),b=parseFloat(document.getElementById("eqb").value),c=parseFloat(document.getElementById("eqc").value);var box=document.getElementById("eqr");if(isNaN(a)||!a){box.textContent="a نمی‌تواند صفر باشد";box.className="res err";return}var d=b*b-4*a*c;var t="معادله: "+a+"x² + ("+b+")x + ("+c+") = 0\nدلتا (Δ) = b²−4ac = "+d+"\n\n";if(d>0){var x1=(-b+Math.sqrt(d))/(2*a),x2=(-b-Math.sqrt(d))/(2*a);t+="دو ریشه حقیقی متمایز:\nx₁ = "+x1+"\nx₂ = "+x2}else if(d===0)t+="ریشه مضاعف:\nx = "+(-b/(2*a));else{var re=-b/(2*a),im=Math.sqrt(-d)/(2*a);t+="ریشه‌های مختلط:\nx₁ = "+re+" + "+im+"i\nx₂ = "+re+" − "+im+"i"}t+="\n\n✨ توضیح: از فرمول کلی x = [-b ± √Δ] / (2a) استفاده شد.";box.textContent=t;box.className="res ok";addXP(8)}
 function solveSysEq(){var a1=parseFloat(document.getElementById("s11").value),b1=parseFloat(document.getElementById("s12").value),c1=parseFloat(document.getElementById("s13").value);var a2=parseFloat(document.getElementById("s21").value),b2=parseFloat(document.getElementById("s22").value),c2=parseFloat(document.getElementById("s23").value);var box=document.getElementById("eqr");var det=a1*b2-a2*b1;if(Math.abs(det)<1e-12){box.textContent="دترمینان صفر است — دستگاه جواب یکتا ندارد";box.className="res err";return}var x=(c1*b2-c2*b1)/det, y=(a1*c2-a2*c1)/det;box.textContent="دستگاه:\n"+a1+"x + "+b1+"y = "+c1+"\n"+a2+"x + "+b2+"y = "+c2+"\n\nجواب:\nx = "+x+"\ny = "+y+"\n\n✨ توضیح: با روش کرامر (دترمینان) حل شد. دترمینان = "+det;box.className="res ok";addXP(10)}
@@ -3288,6 +3369,81 @@ var periSc=0,periAns=0;
 function startPeri(){var t=Math.floor(Math.random()*3);var q="";if(t===0){var s=2+Math.floor(Math.random()*12);periAns=4*s;q="محیط مربعی با ضلع "+s}else if(t===1){var l=3+Math.floor(Math.random()*10),w=2+Math.floor(Math.random()*8);periAns=2*(l+w);q="محیط مستطیلی با طول "+l+" و عرض "+w}else{var n=3+Math.floor(Math.random()*6),s=2+Math.floor(Math.random()*10);periAns=n*s;q="محیط "+n+"‌ضلعی منتظم با ضلع "+s}var el=document.getElementById("periq");if(el)el.textContent=q+" = ؟";var inp=document.getElementById("peria");if(inp)inp.value=""}
 function chkPeri(){var ans=+document.getElementById("peria").value;if(ans===periAns){periSc++;addXP(3);document.getElementById("peris").textContent="امتیاز: "+periSc+" ✓ (+۳ XP)"}else document.getElementById("peris").textContent="امتیاز: "+periSc+" | پاسخ درست: "+periAns;startPeri()}
 
+/* ===== Geometry Mini-Games ===== */
+var geoSc=0, gaSc=0, gaAns=0;
+var GEO_QUESTIONS=[
+  {q:"مجموع زوایای داخلی مثلث چند درجه است؟",opts:["۹۰","۱۸۰","۲۷۰","۳۶۰"],a:1},
+  {q:"در مثلث قائم‌الزاویه، وتر چه ضلعی است؟",opts:["کوچک‌ترین ضلع","بزرگ‌ترین ضلع","ضلع مجاور زاویه حاده","هر ضلع"],a:1},
+  {q:"مساحت دایره با شعاع r برابر است با:",opts:["۲πr","πr²","πr","۴πr²"],a:1},
+  {q:"محیط دایره با شعاع r برابر است با:",opts:["πr²","۲πr","πd/2","۴πr"],a:1},
+  {q:"فرمول هرون برای محاسبه چیست؟",opts:["محیط مثلث","مساحت مثلث با سه ضلع","حجم هرم","مساحت دایره"],a:1},
+  {q:"قضیه فیثاغورث برای کدام مثلث است؟",opts:["متساوی‌الاضلاع","قائم‌الزاویه","متساوی‌الساقین","دلخواه"],a:1},
+  {q:"مجموع زوایای داخلی چهارضلعی چند درجه است؟",opts:["۱۸۰","۲۷۰","۳۶۰","۵۴۰"],a:2},
+  {q:"مساحت لوزی با قطرهای d₁ و d₂ برابر است با:",opts:["d₁×d₂","(d₁×d₂)/۲","۲(d₁+d₂)","d₁+d₂"],a:1},
+  {q:"در دایره، زاویه مرکزی نسبت به زاویه محاطی روبروی همان کمان:",opts:["نصف است","دو برابر است","برابر است","سه برابر است"],a:1},
+  {q:"تعداد قطرهای یک n-ضلعی برابر است با:",opts:["n(n-3)/2","n(n-1)/2","n²","2n"],a:0},
+  {q:"مساحت مثلث با قاعده b و ارتفاع h:",opts:["b×h","(b×h)/۲","۲bh","b+h"],a:1},
+  {q:"حجم کره با شعاع r:",opts:["۴πr²","(۴/۳)πr³","πr²h","۲πr"],a:1}
+];
+function startGeoQuiz(){
+  var item=GEO_QUESTIONS[Math.floor(Math.random()*GEO_QUESTIONS.length)];
+  var body=document.getElementById("geoBody");
+  if(!body)return;
+  var html='<p style="font-size:1.1rem;margin:.8rem 0;line-height:1.6;font-weight:600">'+item.q+'</p><div style="display:grid;gap:.5rem">';
+  item.opts.forEach(function(o,i){
+    html+='<button class="btn btn-o" style="width:100%;justify-content:flex-start;text-align:right" onclick="answerGeo('+i+','+item.a+')">'+String.fromCharCode(65+i)+') '+o+'</button>';
+  });
+  html+='</div>';
+  body.innerHTML=html;
+}
+function answerGeo(chosen,correct){
+  var body=document.getElementById("geoBody");
+  if(chosen===correct){
+    geoSc++;
+    if(typeof addXP==="function")addXP(4);
+    var sc=document.getElementById("geoScore");
+    if(sc)sc.textContent="امتیاز: "+geoSc+" ✓ (+۴ XP)";
+    if(body)body.innerHTML='<p style="color:#4CAF50;font-size:1.2rem;font-weight:700">آفرین! پاسخ درست بود ✓</p><button class="btn btn-p" onclick="startGeoQuiz()">سوال بعدی</button>';
+  }else{
+    var sc=document.getElementById("geoScore");
+    if(sc)sc.textContent="امتیاز: "+geoSc+" | اشتباه ✗";
+    if(body)body.innerHTML='<p style="color:#f44336;font-size:1.15rem">پاسخ نادرست. گزینه درست: '+String.fromCharCode(65+correct)+'</p><button class="btn btn-p" onclick="startGeoQuiz()">سوال بعدی</button>';
+  }
+}
+function startGA(){
+  var types=[
+    function(){var s=2+Math.floor(Math.random()*12);gaAns=s*s;return "مساحت مربعی با ضلع "+s},
+    function(){var s=2+Math.floor(Math.random()*12);gaAns=4*s;return "محیط مربعی با ضلع "+s},
+    function(){var l=3+Math.floor(Math.random()*10),w=2+Math.floor(Math.random()*8);gaAns=l*w;return "مساحت مستطیلی با طول "+l+" و عرض "+w},
+    function(){var l=3+Math.floor(Math.random()*10),w=2+Math.floor(Math.random()*8);gaAns=2*(l+w);return "محیط مستطیلی با طول "+l+" و عرض "+w},
+    function(){var b=4+Math.floor(Math.random()*10),h=3+Math.floor(Math.random()*8);gaAns=(b*h)/2;return "مساحت مثلثی با قاعده "+b+" و ارتفاع "+h},
+    function(){var a=3+Math.floor(Math.random()*8),b=3+Math.floor(Math.random()*8),c=3+Math.floor(Math.random()*8);gaAns=a+b+c;return "محیط مثلثی با اضلاع "+a+"، "+b+" و "+c},
+    function(){var r=2+Math.floor(Math.random()*10);gaAns=Math.round(Math.PI*r*r*100)/100;return "مساحت دایره‌ای با شعاع "+r+" (تا دو رقم اعشار، π≈۳٫۱۴)"},
+    function(){var r=2+Math.floor(Math.random()*10);gaAns=Math.round(2*Math.PI*r*100)/100;return "محیط دایره‌ای با شعاع "+r+" (تا دو رقم اعشار)"},
+    function(){var d1=4+Math.floor(Math.random()*10),d2=4+Math.floor(Math.random()*10);gaAns=(d1*d2)/2;return "مساحت لوزی با قطرهای "+d1+" و "+d2},
+    function(){var s=3+Math.floor(Math.random()*10),h=2+Math.floor(Math.random()*8);gaAns=s*h;return "مساحت لوزی با ضلع "+s+" و ارتفاع "+h},
+    function(){var a=3+Math.floor(Math.random()*8),b=3+Math.floor(Math.random()*8),h=2+Math.floor(Math.random()*8);gaAns=((a+b)*h)/2;return "مساحت ذوزنقه‌ای با قاعده‌های "+a+" و "+b+" و ارتفاع "+h}
+  ];
+  var fn=types[Math.floor(Math.random()*types.length)];
+  var q=fn();
+  var el=document.getElementById("gaq");
+  if(el)el.textContent=q+" = ؟";
+  var inp=document.getElementById("gaa");
+  if(inp){inp.value="";inp.focus()}
+}
+function chkGA(){
+  var ans=parseFloat(document.getElementById("gaa").value);
+  var scEl=document.getElementById("gas");
+  if(isNaN(ans)){if(scEl)scEl.textContent="امتیاز: "+gaSc+" | عددی وارد کنید";return}
+  if(Math.abs(ans-gaAns)<0.02){
+    gaSc++;
+    if(typeof addXP==="function")addXP(3);
+    if(scEl)scEl.textContent="امتیاز: "+gaSc+" ✓ (+۳ XP)";
+  }else{
+    if(scEl)scEl.textContent="امتیاز: "+gaSc+" | پاسخ درست: "+gaAns;
+  }
+  setTimeout(startGA,900);
+}
 
 function khMissingQ(){
   var t=Math.floor(Math.random()*3),seq=[],ans;
@@ -3646,7 +3802,7 @@ function botReply(text){
       "📐 معادله:\n  حل کن: x^2-5x+6=0\n  حل کن: x^3-3*x=110\n  2x+3=11\n\n"+
       "🔢 محاسبات:\n  ۲۳×۴۷   |   ۱۵٪ از ۲۰۰\n  فاکتوریل ۸   |   ۲^۱۰\n  جذر ۱۴۴\n\n"+
       "🔍 نظریه اعداد:\n  آیا ۹۷ اول است؟\n  ب.م.م ۲۴ و ۳۶\n  ک.م.م ۱۲ و ۱۸\n  تجزیه ۱۴۰\n  مقسوم‌علیه‌های ۶۰\n  تعداد مقسوم‌علیه‌های ۱۰۰\n  مقسوم‌علیه‌های اول ۱۴۰\n\n"+
-      "📏 هندسه:\n  مساحت استوانه با شعاع ۵ و ارتفاع ۱۰\n  حجم مخروط شعاع ۱۰ ارتفاع ۹\n  مساحت کره شعاع ۷\n  حجم مکعب ضلع ۴\n  مساحت لوزی ضلع ۶ ارتفاع ۴\n  مساحت بیضی ۵ و ۳\n  حجم هرم ضلع ۶ ارتفاع ۱۰\n  حجم منشور قاعده ۳ ارتفاع ۴ طول ۱۰\n  حجم هشت‌وجهی یال ۵\n  هرون ۳ و ۴ و ۵\n  فیثاغورث ۳ و ۴\n\n"+
+      "📏 هندسه:\n  مساحت استوانه با شعاع ۵ و ارتفاع ۱۰\n  حجم مخروط شعاع ۱۰ ارتفاع ۹\n  مساحت کره شعاع ۷\n  حجم مکعب ضلع ۴\n  مساحت لوزی ضلع ۶ ارتفاع ۴\n  مساحت لوزی قطرهای ۸ و ۶\n  محیط لوزی ضلع ۵\n  مساحت مثلث قاعده ۶ ارتفاع ۴\n  محیط مثلث ۳ و ۴ و ۵\n  مثلث ۵ و ۱۲ و ۱۳\n  مساحت بیضی ۵ و ۳\n  حجم هرم ضلع ۶ ارتفاع ۱۰\n  هرون ۳ و ۴ و ۵\n  فیثاغورث ۳ و ۴\n\n"+
       "📚 مفهوم:\n  قضیه فیثاغورث را توضیح بده\n  عدد اول چیست؟";
   }
 
@@ -3727,7 +3883,38 @@ function botReply(text){
       '\nمساحت کل ≈ '+((2*Math.sqrt(3))*a*a).toFixed(6);
   }
   if(/لوزی/.test(t) && nums.length>=2){
-    return 'لوزی\nمساحت (ضلع×ارتفاع) = '+(nums[0]*nums[1])+'\nمحیط = '+(4*nums[0]);
+    if(/قطر/.test(t) || /d1|d₂|d2/i.test(t)){
+      return 'لوزی با قطرهای '+nums[0]+' و '+nums[1]+
+        '\nمساحت = (d₁×d₂)/۲ = '+(nums[0]*nums[1]/2)+
+        '\nضلع ≈ '+Math.sqrt((nums[0]/2)*(nums[0]/2)+(nums[1]/2)*(nums[1]/2)).toFixed(6);
+    }
+    if(/محیط/.test(t) && nums.length>=1){
+      return 'محیط لوزی با ضلع '+nums[0]+' = '+(4*nums[0]);
+    }
+    return 'لوزی ضلع='+nums[0]+' ارتفاع='+nums[1]+
+      '\nمساحت = ضلع×ارتفاع = '+(nums[0]*nums[1])+
+      '\nمحیط = '+(4*nums[0])+
+      '\n(اگر قطرها را دارید بنویسید: مساحت لوزی قطرهای ۸ و ۶)';
+  }
+  if(/مثلث/.test(t) && nums.length>=2){
+    if(/محیط/.test(t) && nums.length>=3){
+      return 'محیط مثلث با اضلاع '+nums[0]+'، '+nums[1]+' و '+nums[2]+' = '+(nums[0]+nums[1]+nums[2]);
+    }
+    if(/هرون/.test(t) && nums.length>=3){
+      var a=nums[0],b=nums[1],c=nums[2],s=(a+b+c)/2;
+      if(a+b<=c||a+c<=b||b+c<=a) return 'این سه عدد نمی‌توانند اضلاع مثلث باشند.';
+      return 's = '+s+'\nمساحت (هرون) = '+Math.sqrt(s*(s-a)*(s-b)*(s-c));
+    }
+    if(nums.length>=3 && !/ارتفاع|قاعده/.test(t)){
+      var a=nums[0],b=nums[1],c=nums[2],s=(a+b+c)/2;
+      if(a+b<=c||a+c<=b||b+c<=a) return 'نامساوی مثلثی برقرار نیست.';
+      return 'مثلث اضلاع '+a+'، '+b+'، '+c+
+        '\nمحیط = '+(a+b+c)+
+        '\nمساحت (هرون) ≈ '+Math.sqrt(s*(s-a)*(s-b)*(s-c)).toFixed(6);
+    }
+    if(/قاعده|ارتفاع|مساحت/.test(t) || nums.length===2){
+      return 'مثلث قاعده='+nums[0]+' ارتفاع='+nums[1]+'\nمساحت = (قاعده×ارتفاع)/۲ = '+(nums[0]*nums[1]/2);
+    }
   }
   if(/متوازی/.test(t) && nums.length>=2){
     return 'متوازی‌الاضلاع\nمساحت = قاعده×ارتفاع = '+(nums[0]*nums[1]);
@@ -3869,7 +4056,7 @@ var _baseInit = init;
         window.onload = init;
 </script>
 
- <script>
+<script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('./sw.js')
