@@ -24,11 +24,11 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Desktop%20%7C%20Surface%20%7C%20Android-0078D6?style=for-the-badge)](https://sadra-hatami.github.io/Mathematics-Toolbox/)
 ![Education](https://img.shields.io/badge/Education-Mathematics-orange?style=for-the-badge)
 [![Persian](https://img.shields.io/badge/Language-Persian-success?style=for-the-badge)](https://fa.wikipedia.org/wiki/%D9%81%D8%A7%D8%B1%D8%B3%DB%8C)
 ![Offline](https://img.shields.io/badge/Mode-Fully%20Offline-brightgreen?style=for-the-badge)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge&logo=github)](https://sadra-hatami.github.io/Mathematics-Toolbox/)
 ![GitHub](https://img.shields.io/badge/Open_Source-Project-black?style=for-the-badge&logo=github)
 
