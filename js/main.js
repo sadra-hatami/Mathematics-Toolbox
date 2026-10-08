@@ -1,4 +1,5 @@
         // ==================== PAGE SWITCHER ====================
+
         function showPage(pageId) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
             const page = document.getElementById('page-' + pageId);
