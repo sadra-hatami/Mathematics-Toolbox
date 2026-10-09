@@ -39,7 +39,7 @@
 
 [🌐 وبسایت](https://sadra-hatami.github.io/Mathematics-Toolbox/)
 •
-[📘 English README | نسخه انگلیسی راهنما](README.md)
+[📘 English README | راهنمای انگلیسی](README.md)
 •
 [📧 پشتیبانی](mailto:mathematics.toolbox.sadra@gmail.com)
 •
