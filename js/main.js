@@ -1,4 +1,4 @@
-        // ==================== PAGE SWITCHER ====================
+// ==================== PAGE SWITCHER ====================
         function showPage(pageId) {
             document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
             const page = document.getElementById('page-' + pageId);
@@ -34,7 +34,6 @@
         }
         function go(id){ showPage(id); }
 
-        
         function closeMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             const icon = document.getElementById('hamburger-icon');
@@ -207,7 +206,6 @@
             
             console.log('%c[Mathematics Toolbox] Website ready.', 'color:#FF9800; font-weight:bold;');
         }
-        
 
 /* ===== XP System - 50 levels ===== */
 var LEVEL_NAMES = [
@@ -779,8 +777,6 @@ function doAlgOps(){
 }
 function fmtLin(coef,v,c){var s=""; if(coef) s+=(coef===1?v:(coef===-1?"-"+v:coef+v)); if(c) s+=(c>0&&s?" + ":"")+c; return s||"0"}
 
-
-
 /* ===== Equation tabs ===== */
 function eqTab(id,btn){["lin","quad","sys","sys3","sys4","free"].forEach(function(t){var e=document.getElementById("eq-"+t);if(e)e.style.display=t===id?"":"none"});document.querySelectorAll(".eq-tab").forEach(function(b){b.classList.remove("active")});if(btn)btn.classList.add("active");var r=document.getElementById("eqr");if(r)r.textContent=""}
 function gaussSolve(M,n){for(var col=0;col<n;col++){var piv=col;for(var r=col+1;r<n;r++)if(Math.abs(M[r][col])>Math.abs(M[piv][col]))piv=r;if(Math.abs(M[piv][col])<1e-12)return null;var tmp=M[col];M[col]=M[piv];M[piv]=tmp;var d=M[col][col];for(var j=col;j<=n;j++)M[col][j]/=d;for(var r=0;r<n;r++){if(r===col)continue;var f=M[r][col];for(var j=col;j<=n;j++)M[r][j]-=f*M[col][j]}}var sol=[];for(var i=0;i<n;i++)sol.push(M[i][n]);return sol}
@@ -862,7 +858,6 @@ function flipCoin(){var r=Math.random()<0.5;if(r)coinH++;else coinT++;document.g
 function rollDice(){var n=1+Math.floor(Math.random()*6);diceHist.push(n);if(diceHist.length>20)diceHist.shift();document.getElementById("diceRes").textContent="🎲 "+n;document.getElementById("diceStats").textContent="آخرین نتایج: "+diceHist.join(" ، ");addXP(1)}
 function calcProb(){var f=parseFloat(document.getElementById("pfav").value), t=parseFloat(document.getElementById("ptot").value);var box=document.getElementById("probR");if(isNaN(f)||isNaN(t)||t<=0||f<0||f>t){box.textContent="مقادیر نامعتبر";box.className="res err";return}var p=f/t;box.textContent="احتمال = "+f+"/"+t+" = "+p.toFixed(6)+"\nبه درصد: "+(p*100).toFixed(2)+"%\n\nتفسیر: از هر "+t+" حالت ممکن، "+f+" حالت مطلوب است.";box.className="res ok";addXP(3)}
 
-
 /* ===== Extra mini-games ===== */
 var mulSc=0,mulA=0,mulB=0;
 function startMul(){mulA=2+Math.floor(Math.random()*12);mulB=2+Math.floor(Math.random()*12);var el=document.getElementById("mulq");if(el)el.textContent=mulA+" × "+mulB+" = ؟";var inp=document.getElementById("mula");if(inp)inp.value=""}
@@ -889,8 +884,6 @@ function tickSnake(){if(!sn.alive||sn.paused)return;sn.dir=sn.nextDir;var h=sn.s
 function snakeOver(){sn.alive=false;if(sn.timer)clearInterval(sn.timer);if(sn.score>=50)addXP(15);else if(sn.score>=30)addXP(8);drawSnake(true)}
 function drawSnake(dead){var c=document.getElementById("snakeCanvas");if(!c)return;var ctx=c.getContext("2d");var cs=c.width/sn.grid;ctx.fillStyle="#0d0d0d";ctx.fillRect(0,0,c.width,c.height);ctx.strokeStyle="#1a1a1a";for(var i=0;i<=sn.grid;i++){ctx.beginPath();ctx.moveTo(i*cs,0);ctx.lineTo(i*cs,c.height);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*cs);ctx.lineTo(c.width,i*cs);ctx.stroke()}for(var i=0;i<sn.foods.length;i++){var f=sn.foods[i];ctx.fillStyle="#2196F3";ctx.beginPath();ctx.arc((f.x+0.5)*cs,(f.y+0.5)*cs,cs*0.38,0,Math.PI*2);ctx.fill();ctx.fillStyle="#fff";ctx.font="bold "+Math.floor(cs*0.4)+"px Vazir,Tahoma";ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillText(String(f.val),(f.x+0.5)*cs,(f.y+0.5)*cs+1)}for(var i=0;i<sn.snake.length;i++){var p=sn.snake[i];ctx.fillStyle=i===0?(dead?"#888":"#FF9800"):"#ffb74d";ctx.fillRect(p.x*cs+1,p.y*cs+1,cs-2,cs-2)}if(dead){ctx.fillStyle="rgba(0,0,0,0.6)";ctx.fillRect(0,0,c.width,c.height);ctx.fillStyle="#fff";ctx.font="bold 22px Vazir,Tahoma";ctx.textAlign="center";ctx.fillText("تمام! امتیاز: "+sn.score,c.width/2,c.height/2-10);ctx.font="14px Vazir,Tahoma";ctx.fillText(sn.score>=50?"آفرین! جایزه XP گرفتی":"برای شروع دوباره کلیک کنید",c.width/2,c.height/2+22)}}
 document.addEventListener("keydown",function(e){if(!document.getElementById("page-snake")||!document.getElementById("page-snake").classList.contains("active"))return;var k=e.key;if(k==="ArrowUp"||k==="w"||k==="W"){e.preventDefault();snakeDir(0,-1)}else if(k==="ArrowDown"||k==="s"||k==="S"){e.preventDefault();snakeDir(0,1)}else if(k==="ArrowLeft"||k==="a"||k==="A"){e.preventDefault();snakeDir(-1,0)}else if(k==="ArrowRight"||k==="d"||k==="D"){e.preventDefault();snakeDir(1,0)}else if(k===" "){e.preventDefault();toggleSnake()}});
-
-
 
 /* ===== Advanced mini-games ===== */
 var kh={mode:null,score:0,q:0,timer:null,timeLeft:0,data:null,monsterHP:10,flipped:[],matched:0,lock:false,clicks:0};
@@ -976,7 +969,6 @@ function khMemFlip(i){if(kh.lock||kh.flipped.indexOf(i)>=0)return;var btn=docume
 
 function khClickStart(){kh.clicks=0;document.getElementById("khBody").innerHTML='<p style="margin-bottom:.6rem">هرچه سریع‌تر روی دکمه کلیک کن!</p><button class="btn btn-p" style="padding:1.5rem 2.5rem;font-size:1.3rem" onclick="kh.clicks++;document.getElementById(\'khScore\').textContent=\'کلیک: \'+kh.clicks">کلیک!</button>'}
 
-
 /* ===== Geometry canvas lab ===== */
 var geoCtx=null, geoDrawing=false;
 function initGeoCanvas(){var c=document.getElementById("geoCanvas");if(!c)return;geoCtx=c.getContext("2d");geoCtx.strokeStyle="#FF9800";geoCtx.lineWidth=2;
@@ -993,7 +985,6 @@ else if(type==="triangle"){geoCtx.beginPath();geoCtx.moveTo(c.width/2,40);geoCtx
 addXP(2);geoCtx.strokeStyle="#FF9800";geoCtx.lineWidth=2}
 function clearGeo(){var c=document.getElementById("geoCanvas");if(c&&geoCtx)geoCtx.clearRect(0,0,c.width,c.height)}
 function simulateCoin(){var n=parseInt(document.getElementById("simCount").value,10)||100;var h=0;for(var i=0;i<n;i++)if(Math.random()<0.5)h++;var p=(h/n*100).toFixed(1);document.getElementById("simResult").textContent="از "+n+" پرتاب → شیر: "+h+" ("+p+"٪) | خط: "+(n-h)+" ("+(100-p).toFixed(1)+"٪)\nاحتمال نظری ≈ ۵۰٪";document.getElementById("simResult").className="res ok";addXP(5)}
-
 
 function khEqmcQ(){
   var qs=[
@@ -1048,8 +1039,6 @@ function khDivHuntQ(){
 }
 function khDivHuntCheck(){var ok=true,sel=0;var correct=[];kh.data.nums.forEach(function(n,i){var btn=document.getElementById("dh"+i);var on=btn&&btn.classList.contains("active");if(on)sel++;if(n%kh.data.d===0)correct.push(n);if(on!==(n%kh.data.d===0))ok=false});if(ok&&sel>0){kh.score++;addXP(3)}else ok=false;khFeedback(ok, correct.length?correct.join(" ، "):"—", khDivHuntQ)}
 
-
-
 function doPctOf(){var b=+document.getElementById("pct-base").value,p=+document.getElementById("pct-p").value;var box=document.getElementById("pctR");if(isNaN(b)||isNaN(p)){box.textContent="مقادیر را وارد کنید";box.className="res err";return}var r=b*p/100;box.textContent=p+"٪ از "+b+" = "+r;box.className="res ok";addXP(3)}
 function doPctInc(){var b=+document.getElementById("pct-base").value,p=+document.getElementById("pct-p").value;var box=document.getElementById("pctR");if(isNaN(b)||isNaN(p)){box.textContent="مقادیر را وارد کنید";box.className="res err";return}var r=b*(1+p/100);box.textContent=b+" با افزایش "+p+"٪ = "+r;box.className="res ok";addXP(3)}
 function doPctDec(){var b=+document.getElementById("pct-base").value,p=+document.getElementById("pct-p").value;var box=document.getElementById("pctR");if(isNaN(b)||isNaN(p)){box.textContent="مقادیر را وارد کنید";box.className="res err";return}var r=b*(1-p/100);box.textContent=b+" با کاهش "+p+"٪ = "+r;box.className="res ok";addXP(3)}
@@ -1060,8 +1049,6 @@ function doCongru(){var a=+document.getElementById("mod-a").value,b=+document.ge
 function doRoot(){var n=+document.getElementById("rt-n").value,k=+document.getElementById("rt-k").value;var box=document.getElementById("rtR");if(isNaN(n)||isNaN(k)||k===0){box.textContent="عدد و k را وارد کنید";box.className="res err";return}if(n<0&&k%2===0){box.textContent="ریشه زوج از عدد منفی در اعداد حقیقی تعریف نشده";box.className="res err";return}var r=Math.pow(n,1/k);box.textContent="ریشه "+k+"‌ام از "+n+" ≈ "+r+"\nبررسی: ("+r+")^"+k+" ≈ "+Math.pow(r,k);box.className="res ok";addXP(3)}
 function doPow(){var n=+document.getElementById("rt-n").value,k=+document.getElementById("rt-k").value;var box=document.getElementById("rtR");if(isNaN(n)||isNaN(k)){box.textContent="عدد و توان را وارد کنید";box.className="res err";return}var r=Math.pow(n,k);box.textContent=n+" ^ "+k+" = "+r;box.className="res ok";addXP(2)}
 function doDist(){var x1=+document.getElementById("d-x1").value,y1=+document.getElementById("d-y1").value,x2=+document.getElementById("d-x2").value,y2=+document.getElementById("d-y2").value;var box=document.getElementById("dR");if([x1,y1,x2,y2].some(isNaN)){box.textContent="هر چهار مختصات را وارد کنید";box.className="res err";return}var dist=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));var mx=(x1+x2)/2,my=(y1+y2)/2;box.textContent="فاصله = √[("+x2+"−"+x1+")² + ("+y2+"−"+y1+")²] = "+dist.toFixed(6)+"\nنقطه میانی = ("+mx+" ، "+my+")";box.className="res ok";addXP(3)}
-
-
 
 var modGSc=0,modGAns=0;
 function startModG(){var a=10+Math.floor(Math.random()*90),m=2+Math.floor(Math.random()*9);modGAns=((a%m)+m)%m;var el=document.getElementById("modq");if(el)el.textContent=a+" mod "+m+" = ؟";var inp=document.getElementById("moda");if(inp)inp.value=""}
@@ -1173,7 +1160,6 @@ function khCompareQ(){
   document.getElementById("khBody").innerHTML=h;
 }
 function khCompareA(v){var ok=(v===kh.data);if(ok){kh.score++;addXP(3)}khFeedback(ok, kh.compareCorrect||kh.data, khCompareQ)}
-
 
 function updateShapeHints(){
   var t=document.getElementById('sh-type').value;
@@ -1315,8 +1301,6 @@ function doPrimeOrder(){
   box.className="res ok";addXP(4);
 }
 
-
-        
 /* ===== Unit Converter ===== */
 var UNIT_DATA = {
   length: {base:'m', units:[
@@ -1761,16 +1745,3 @@ var _baseInit = init;
           });
         };
         window.onload = init;
-
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('./sw.js')
-        .then(function(registration) {
-          console.log('Service Worker با موفقیت ثبت شد:', registration.scope);
-        })
-        .catch(function(error) {
-          console.log('خطا در ثبت Service Worker:', error);
-        });
-    });
-  }
