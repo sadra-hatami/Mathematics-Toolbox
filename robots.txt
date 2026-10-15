@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sadra-hatami.github.io/Mathematics-Toolbox/sitemap.xml
